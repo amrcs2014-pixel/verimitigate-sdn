@@ -10,3 +10,5 @@ __pycache__/
 *.pyc
 *.log
 !results/sft/*.log
+paper_outputs/
+results/llm_server.log

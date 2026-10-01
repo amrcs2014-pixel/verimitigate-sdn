@@ -5,7 +5,7 @@ import analysis as A
 import figures as F
 import matplotlib.pyplot as plt
 
-OUT = os.path.join(A.ROOT, "paperA_srep")
+OUT = os.path.join(A.ROOT, "paper_outputs"); os.makedirs(OUT, exist_ok=True)
 ORDER = ["none", "portdrop", "template", "vtemplate", "llm", "verimit"]
 LBL = F.LBL
 MAC = {}

@@ -44,7 +44,8 @@ def main():
     L.append(r"\midrule")
     L.append(f"All & {len(R)} & {s_w['n']} & {100 * s_w['agree']:.2f} & {s_w['kappa']:.3f} & {s_w['fn']} & {100 * s_c['agree']:.2f} " + r"\\")
     L += [r"\bottomrule", r"\end{tabular}", r"\end{table}"]
-    for paper in ("paperA_srep", "paperB_srep"):
+    os.makedirs(os.path.join(A.ROOT, "paper_outputs"), exist_ok=True)
+    for paper in ("paper_outputs",):
         open(os.path.join(A.ROOT, paper, "tab_val.tex"), "w").write("\n".join(L) + "\n")
         with open(os.path.join(A.ROOT, paper, "numbers_val.tex"), "w") as f:
             for k, v in M.items(): f.write(f"\\newcommand{{\\{k}}}{{{v}}}\n")
