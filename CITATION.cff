@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code or these logs, please cite them as below."
+title: "VeriMitigate: verified language-model mitigation for software-defined IoT networks (code and logs)"
+authors:
+  - family-names: Abdelhaliem
+    given-names: Amr H.
+    affiliation: "Department of Cyber Security, Faculty of Science and Information Technology, Irbid National University, Jordan"
+date-released: 2026-10-01
+license: MIT

@@ -1,0 +1,64 @@
+{
+ "args": {
+  "mode": "dpo",
+  "out": "../models/adapters/dpo2.pt",
+  "lr": 1e-05,
+  "epochs": 1,
+  "accum": 4,
+  "limit": 0,
+  "exclude_class": "",
+  "init": "../models/adapters/sft.pt",
+  "pairs": "../results/sft/dpo_train.jsonl",
+  "beta": 0.1,
+  "nll": 1.0
+ },
+ "log": [
+  {
+   "step": 5,
+   "loss": 0.5583592697978019,
+   "acc": 0.8
+  },
+  {
+   "step": 10,
+   "loss": 0.2526945497840643,
+   "acc": 0.95
+  },
+  {
+   "step": 15,
+   "loss": 0.31515093306079506,
+   "acc": 1.0
+  },
+  {
+   "step": 20,
+   "loss": 0.19841659497469663,
+   "acc": 1.0
+  },
+  {
+   "step": 25,
+   "loss": 0.175814412208274,
+   "acc": 1.0
+  },
+  {
+   "step": 30,
+   "loss": 0.2619617047253996,
+   "acc": 0.95
+  },
+  {
+   "step": 35,
+   "loss": 0.14027684041066096,
+   "acc": 0.95
+  },
+  {
+   "step": 40,
+   "loss": 0.027267039846628906,
+   "acc": 1.0
+  },
+  {
+   "step": 45,
+   "loss": 0.1883681298524607,
+   "acc": 0.9
+  }
+ ],
+ "n_pairs": 185,
+ "train_s": 1327.5858778953552
+}

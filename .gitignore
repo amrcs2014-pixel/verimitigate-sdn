@@ -1,0 +1,12 @@
+data/
+models/qwen1.5b/
+models/adapters/*.pt
+results/detector/*.npy
+results/detector/*.pkl
+results/detector/*.npz
+results/detector/*.parquet
+results/archive_nondeterministic/
+__pycache__/
+*.pyc
+*.log
+!results/sft/*.log

@@ -1,0 +1,7 @@
+0 120 0 {'incidents': 3, 'greedy_ok': 3, 'any_ok': 3}
+20 120 2 {'incidents': 40, 'greedy_ok': 38, 'any_ok': 40}
+40 120 4 {'incidents': 64, 'greedy_ok': 59, 'any_ok': 61}
+60 120 4 {'incidents': 104, 'greedy_ok': 97, 'any_ok': 99}
+80 120 4 {'incidents': 138, 'greedy_ok': 126, 'any_ok': 128}
+100 120 13 {'incidents': 180, 'greedy_ok': 158, 'any_ok': 163}
+pairs 20 mixed 220 {'incidents': 448, 'greedy_ok': 174, 'any_ok': 182}

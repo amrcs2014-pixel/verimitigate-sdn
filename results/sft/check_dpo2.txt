@@ -1,0 +1,4 @@
+dpo2=../models/adapters/dpo2.pt valid 25 / 25 {'DDoS': '5/5', 'Hijack': '5/5', 'Injection': '5/5', 'Linkfab': '5/5', 'PortScan': '5/5'}
+DDoS [{"match":{"in_port":7,"eth_type":2048,"ip_src":"10.0.0.10"},"action":"drop","switches":["s2"],"priority":100,"ttl":300}]
+DDoS [{"match":{"in_port":2,"eth_type":2048,"ip_src":"10.0.0.5"},"action":"drop","switches":["s3"],"priority":100,"ttl":300}]
+DDoS [{"match":{"in_port":4,"eth_type":2048,"ip_src":"10.0.0.4"},"action":"drop","switches":["s2"],"priority":100,"ttl":300}]
