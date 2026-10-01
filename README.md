@@ -14,7 +14,7 @@ VeriMitigate is a closed detect–explain–mitigate loop for SDN. A detector al
 
 A traffic-replay twin then confirms the rule stops the attack. Rejected rules return to the model with a concrete counterexample packet.
 
-**Companion repository** (adversarial robustness of automated responders): `sdn-responder-robustness`.
+**Companion repository** (adversarial robustness of automated responders): [https://github.com/amrcs2014-pixel/sdn-responder-robustness](https://github.com/amrcs2014-pixel/sdn-responder-robustness).
 
 ## Key results (reproduced by the logs in `results/`)
 
