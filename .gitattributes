@@ -2,3 +2,4 @@
 Dockerfile text eol=lf
 *.py text eol=lf
 *.sqlite binary
+*.pt binary

@@ -12,3 +12,4 @@ __pycache__/
 !results/sft/*.log
 paper_outputs/
 results/llm_server.log
+!models/adapters/sft.pt

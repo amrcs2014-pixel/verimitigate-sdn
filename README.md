@@ -61,7 +61,7 @@ A traffic-replay twin then confirms the rule stops the attack. Rejected rules re
 
 1. **Setup.** `pip install -r requirements.txt` (Python 3.11).
 2. **Data.** Download `FULL_SDN_NIDS.parquet` from LAN-SDN-NIDS (CC BY 4.0, https://doi.org/10.21950/QMAXKP) into `data/`, then run `python src/detector.py`.
-3. **Model.** Download `Qwen/Qwen2.5-1.5B-Instruct` into `models/qwen1.5b/`. The selected adapter `sft.pt` is attached to the GitHub Release. To retrain it, run `python src/sft_data.py && python src/build_sft.py && python src/train_lora.py sft --out ../models/adapters/sft.pt --limit 1000` (about 65 min on a GTX 1060).
+3. **Model.** Download `Qwen/Qwen2.5-1.5B-Instruct` into `models/qwen1.5b/`. The selected LoRA adapter is included at `models/adapters/sft.pt` (74 MB; SHA-256 `173352412211e7f3c1faa47f95a60ea17944848c0b3ca089cc69ed4811d31c6a`; metadata in `sft.pt.json`). To retrain it, run `python src/sft_data.py && python src/build_sft.py && python src/train_lora.py sft --out ../models/adapters/sft.pt --limit 1000` (about 65 min on a GTX 1060).
 4. **Experiments.** Run `bash src/run_all.sh`. Every run is a deterministic function of (scenario, topology, seed), and LLM calls are served from `results/llm_cache.sqlite` when present.
 5. **Validation** (Ubuntu 22.04, root, with Docker, Open vSwitch, [Containernet](https://github.com/containernet/containernet) and Ryu 4.34 installed):
    1. `python3 containernet/setup_ryu.py && python3 containernet/fix_wsgi.py`
