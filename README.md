@@ -1,8 +1,6 @@
-# VeriMitigate: verified language-model mitigation for software-defined IoT networks
+# Control-plane-aware verification of language-model-synthesized mitigation rules in software-defined IoT networks
 
 Code and complete experiment logs for the paper:
-
-> A. H. Abdelhaliem, *Verification, not generation, makes language-model-driven mitigation safe in software-defined IoT networks* (submitted).
 
 VeriMitigate is a closed detect–explain–mitigate loop for SDN. A detector alert triggers a fine-tuned language model (Qwen2.5-1.5B + LoRA) to write OpenFlow mitigation rules. Before installation, a deterministic verifier checks each rule:
 
@@ -14,7 +12,6 @@ VeriMitigate is a closed detect–explain–mitigate loop for SDN. A detector al
 
 A traffic-replay twin then confirms the rule stops the attack. Rejected rules return to the model with a concrete counterexample packet.
 
-**Companion repository** (adversarial robustness of automated responders): [https://github.com/amrcs2014-pixel/sdn-responder-robustness](https://github.com/amrcs2014-pixel/sdn-responder-robustness).
 
 ## Key results (reproduced by the logs in `results/`)
 
